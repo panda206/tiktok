@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+
+    // ===== 关键：输出结构控制 =====
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    // ===== Node 环境 =====
+    "module": "NodeNext",
+    "target": "ES2022",
+    "moduleResolution": "NodeNext",
+
+    "types": ["node"],
+
+    // ===== 输出调试 =====
+    "sourceMap": true,
+
+    // ===== 类型安全（保留你的）=====
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "noUncheckedSideEffectImports": true,
+
+    // ===== Electron 必备 =====
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+
+    // ===== 保留模块行为（避免 Electron 乱）=====
+    "isolatedModules": false,
+    "verbatimModuleSyntax": false,
+
+    // ===== JSX（其实你现在用不到，可以删，但不影响）=====
+    "jsx": "react-jsx"
+  },
+
+  "include": [
+    "src/**/*"
+  ]
+}
