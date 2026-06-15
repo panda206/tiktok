@@ -1,0 +1,12 @@
+<input id="username" placeholder="输入主播名" />
+<button id="btn">连接</button>
+
+<script>
+document.getElementById('btn').onclick = async () => {
+    const username = document.getElementById('username').value;
+
+    await window.api.connect(username);
+
+    console.log('连接请求已发送:', username);
+};
+</script>
